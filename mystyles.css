@@ -1,0 +1,28 @@
+*{
+    
+    padding: 5px;
+    margin: auto;
+}
+
+body{
+    background-color: ghostwhite;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(1fr, 12);
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas: 
+        "o o o o o o o o o o o o"
+        "t t t t t t t t t t t t"
+        "th th th th th th th th th th th th"
+        "f f f f f f f f f f f f"
+        "fi fi fi fi fi fi fi fi fi fi fi fi"
+}
+
+.grid-area{
+    background-color: grey;
+    border: 1px solid brown;
+
+}
+
