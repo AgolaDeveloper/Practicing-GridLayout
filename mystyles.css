@@ -1,28 +1,60 @@
-*{
-    
-    padding: 5px;
-    margin: auto;
-}
-
-body{
-    background-color: ghostwhite;
-}
-
-.grid-container{
+/*body{ background-color:green;}*/
+.container{
+    /*overflow: auto;*/
+    height: 100%;
     display: grid;
-    grid-template-columns: repeat(1fr, 12);
-    grid-template-rows: auto auto auto auto auto;
-    grid-template-areas: 
-        "o o o o o o o o o o o o"
-        "t t t t t t t t t t t t"
-        "th th th th th th th th th th th th"
-        "f f f f f f f f f f f f"
-        "fi fi fi fi fi fi fi fi fi fi fi fi"
-}
-
-.grid-area{
-    background-color: grey;
-    border: 1px solid brown;
+    
+    grid-template:
+    "th th th" 40%
+    "o t fo" 1fr
+    "o t fo" 20%
+    / 20% 1fr 20%;
+    /*
+    grid-gap: 3px;
+    */
 
 }
+/*
+.container> div{
+    padding: 20px;
+}*/
+.grid-item{
+    
+    padding: 10px;
+}
 
+.item-1{
+    background-color: indigo;
+    grid-area: o;
+    text-decoration: underline;
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.item-2{
+    background-color:gainsboro;
+    grid-area: t;
+    text-decoration: overline;
+    font-size: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.item-3{
+    background-color:green;
+    grid-area: th;
+    text-decoration: line-through;
+}
+
+.item-4{
+    background-color: red;
+    grid-area: fo;
+    text-decoration: underline;
+}
+
+h1{
+    text-align: center;
+    font-size: 60px;
+    text-decoration: underline;
+    color: wheat;
+    font-family: 'Times New Roman', Times, serif;
+}
