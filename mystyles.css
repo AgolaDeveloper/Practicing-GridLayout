@@ -1,26 +1,46 @@
+*{
+    box-sizing: border-box;
+}
 /*body{ background-color:green;}*/
 .container{
-    /*overflow: auto;*/
+    overflow: auto;
     height: 100%;
     display: grid;
     
     grid-template:
-    "th th th" 40%
+    "th th th" 20%
     "o t fo" 1fr
     "o t fo" 20%
-    / 20% 1fr 20%;
+    / 10% 1fr 20%;
     /*
     grid-gap: 3px;
     */
+}
 
+.item-4{
+    overflow: auto;
+
+    display: grid;
+    grid-template: 
+    "x" 1fr
+    "y" 1fr
+    "z" 1fr
+    /1fr;
+
+    grid-gap: 3px;
+}
+
+.item42{
+    border-bottom: 1px solid blueviolet;
 }
 /*
 .container> div{
     padding: 20px;
 }*/
 .grid-item{
-    
+    border: 2px solid white;
     padding: 10px;
+    overflow: auto;
 }
 
 .item-1{
@@ -40,13 +60,13 @@
 }
 
 .item-3{
-    background-color:green;
+    background-color: burlywood;
     grid-area: th;
     text-decoration: line-through;
 }
 
 .item-4{
-    background-color: red;
+
     grid-area: fo;
     text-decoration: underline;
 }
