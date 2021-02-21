@@ -44,10 +44,10 @@
 }
 
 .item-1{
-    background-color: ivory
+    background-color: ivory;
     grid-area: o;
     text-decoration: underline;
-    font-size: 30px;
+    font-size: 10px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
