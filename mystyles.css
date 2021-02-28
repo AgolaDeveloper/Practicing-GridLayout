@@ -39,14 +39,14 @@
 }*/
 .grid-item{
     border: 2px solid white;
-    padding: 10px;
+    padding: 20px;
     overflow: auto;
 }
 
 .item-1{
     background-color: ivory;
     grid-area: o;
-    text-decoration: underline;
+    text-decoration: none;
     font-size: 10px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
